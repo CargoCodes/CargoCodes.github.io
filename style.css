@@ -68,7 +68,6 @@ head{
 }
 
 
-
 .packTitle{
   color: white;
   margin: 20px;
@@ -125,6 +124,7 @@ head{
   justify-content: center;
   margin-left: 10px;
   align-items: center;
+  background-color: #1F2633;
 }
 
 #htmlLogo{

@@ -1,7 +1,7 @@
 body{
   background-image: linear-gradient(90deg,
     #700B97 0%,
-    #00ADB5 50%,
+    #00ADB5 70%,
     #00FFF5 100%);
 }
 
@@ -21,7 +21,7 @@ head{
 
 .myDescription p{
   color: white;
-  font-size: 35px;
+  font-size: 40px;
   text-align: center;
   margin: 10px;
 }
@@ -39,7 +39,7 @@ head{
 
 .langTitle{
   color: white;
-  font-size: 35px;
+  font-size: 40px;
   text-align: center;
 }
 
@@ -62,7 +62,7 @@ head{
   position: absolute;
   background-image: linear-gradient(135deg,
     #00FFF5 0%,
-    #00ADB5 50%,
+    #00ADB5 30%,
     #700B97 100%);
   width: auto;
   border-radius: 10px;

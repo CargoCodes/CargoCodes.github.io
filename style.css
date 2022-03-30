@@ -74,7 +74,7 @@ head{
 .dropdownContent p{
   color: #1F2633;
   text-align: center;
-  display: block;
+  display: none;
   font-size: 25px;
   margin-left: 10px;
   margin-right: 10px;
@@ -83,6 +83,10 @@ head{
 }
 
 .dropdown:hover .dropdownContent{
+  display: block;
+}
+
+.dropdown:hover .dropdownContent p{
   display: block;
 }
 

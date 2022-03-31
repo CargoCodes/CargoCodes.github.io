@@ -3,6 +3,7 @@ body{
     #700B97 0%,
     #00ADB5 70%,
     #00FFF5 100%);
+  font-family:monospace;
 }
 
 head{
@@ -129,13 +130,28 @@ head{
 }
 
 .packDescription{
+  height: 90%;
   color: white;
   width: 65%;
   align-items: center;
   padding: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
+}
+
+.packInfo{
+  height: 10%;
+  width: 100%;
+  margin-bottom: -40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.packInfo p{
+  color: #c8c8c8;
+  font-size: 25px;
 }
 
 .terminal{

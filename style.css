@@ -59,7 +59,7 @@ head{
 }
 
 .dropdownContent{
-  display: none;
+  /*display: none;*/
   position: absolute;
   background-image: linear-gradient(135deg,
     #00FFF5 0%,
@@ -69,10 +69,12 @@ head{
   border-radius: 10px;
   padding: 3px;
   align-items: center;
+  transform: scale(0);
+  transition: transform 300ms;
 }
 
 .dropdownContent p{
-  color: #1F2633;
+  color: white;
   text-align: center;
   display: none;
   font-size: 30px;
@@ -83,10 +85,12 @@ head{
 }
 
 .dropdown:hover .dropdownContent{
-  display: block;
+  atransition: transform 300ms;
+  transform: scale(1);
 }
 
 .dropdown:hover .dropdownContent p{
+  transition: 300ms;
   display: block;
 }
 
@@ -171,8 +175,39 @@ head{
   text-align: center;
 }
 
+.packTitleMid{
+  border-radius: 20px;
+  align-items: center;
+  padding: 0;
+  display: inline-block;
+}
+
+.packTitleInside{
+  border-radius: 20px;
+  background-color: #1F2633;
+  padding: 5px 20px;
+}
+/*
+.packTitleMid:hover{
+  transition: 300ms;
+  transform: scale(1.1);
+  border-width: 1px;
+  border-color: white;
+
+  /*background-image: linear-gradient(90deg,
+    #700B97 0%,
+    #00ADB5 70%,
+    #00FFF5 100%);
+}
+
+.packTitleMid:hover .packTitleInside{
+  transform: scale(0.9);
+  border-color: white;
+  border-width: 1px;
+}
+*/
+
 .langLogo{
-  width: 29%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -181,28 +216,49 @@ head{
   background-color: #1F2633;
 }
 
+.logo{
+  border-radius: 20px;
+  align-items: center;
+}
+
+.logoInside{
+  align-items: center;
+  border-radius: 20px;
+  background-color: #1F2633;
+  padding: 5px 9px 5px 9px;
+}
+
+.logo:hover{
+  transition: 300ms;
+  transform: scale(1.1);
+  background-image: linear-gradient(-135deg,
+    #700B97 0%,
+    #00ADB5 70%,
+    #00FFF5 100%);
+}
+
+.logo:hover .logoInside{
+  transform: scale(0.9);
+}
+
 #htmlLogo{
   font-size: 70px;
   color: white;
-  margin-bottom: 5px;
 }
 
 #cssLogo{
   font-size: 70px;
   color: white;
-  margin-top: 5px;
 }
 
 #python{
   font-size: 70px;
   color: white;
-  margin-bottom: 5px;
 }
 
 #java{
   color: white;
   font-size: 70px;
-  margin-top: 5px;
 }
 
 @media (orientation: portrait){

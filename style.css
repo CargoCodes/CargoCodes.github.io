@@ -132,7 +132,11 @@ head{
   color: lightblue;
 }
 
-.packDescription{
+.card{
+  perspective: 150rem:none;
+  position: relative;
+  margin: 2rem;
+  background: none;
   height: 90%;
   color: white;
   width: 65%;
@@ -141,20 +145,69 @@ head{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  margin-bottom: -10px;
+  padding-top: 10px;
 }
 
-.packInfo{
+.packDescription{
+  color: white;
+  width: 65%;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.side{
+  color: white;
+  padding: 2rem;
+  border-radius: 20px;
+  transition: all 0.8s ease;
+  backface-visibility: hidden;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  top: 0;
+  left: 0;
+}
+
+.side.back{
+  top: 0px;
+  transform: rotateY(-180deg);
+  color: #1F2633;
   height: 10%;
   width: 100%;
   margin-bottom: -40px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  font-size: 25px;
+}
+
+.side.front{
+  top: 0;
+}
+
+.card:hover .side.front{
+  transform: rotateY(180deg);
+  color: #1F2633;
+}
+
+.card:hover .side.back{
+  transform: rotateY(0deg);
+  color: #c8c8c8;
+}
+
+.packInfo{
+
 }
 
 .packInfo p{
-  color: #c8c8c8;
-  font-size: 25px;
+  /*color: #c8c8c8;*/
+
 }
 
 .terminal{
@@ -169,42 +222,33 @@ head{
 }
 
 .packageDescription{
-  color: white;
   font-size: 35px;
   text-align: center;
 }
 
-.packTitleMid{
-  border-radius: 20px;
+.packTitle{
+  color: white;
+  margin: 20px;
+  width: 71%;
+  font-size: 45px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 0;
-  display: inline-block;
+  transition: all 0.6s ease;
 }
 
-.packTitleInside{
-  border-radius: 20px;
-  background-color: #1F2633;
-  padding: 5px 20px;
+.packTitle:hover{
+  position: sticky;
+  transform: rotateZ(180deg);
+  font-size: 55px;
+  transform: rotateZ(360deg);
+  font-size: 60px;
+/*  transform: rotateX(180deg);
+  transform: rotateY(180deg);*/
 }
-/*
-.packTitleMid:hover{
-  transition: 300ms;
-  transform: scale(1.1);
-  border-width: 1px;
-  border-color: white;
-
-  /*background-image: linear-gradient(90deg,
-    #700B97 0%,
-    #00ADB5 70%,
-    #00FFF5 100%);
-}
-
-.packTitleMid:hover .packTitleInside{
-  transform: scale(0.9);
-  border-color: white;
-  border-width: 1px;
-}
-*/
 
 .langLogo{
   display: flex;

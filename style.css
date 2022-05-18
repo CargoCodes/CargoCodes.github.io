@@ -52,6 +52,9 @@ head{
   flex-direction: row;
   justify-content: space-evenly;;
   margin-bottom: 30px;
+  position: sticky;
+  background-color: #1F2633;
+  border-radius: 20px;
 }
 
 .left{

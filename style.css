@@ -5,6 +5,7 @@ body{
     #00FFF5 100%);
   font-family:monospace;
   min-width: 600px;
+  position: relative;
 }
 
 head{
@@ -33,6 +34,7 @@ head{
 }
 /*#1F2633*/
 .langs{
+  position: sticky;
   background-color: #1F2633;
   border-radius: 20px;
   display: grid;

@@ -34,8 +34,6 @@ head{
 }
 /*#1F2633*/
 .langs{
-  position: sticky;
-  top: 0;
   background-color: #1F2633;
   border-radius: 20px;
   display: grid;
